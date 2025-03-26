@@ -1,0 +1,88 @@
+/*estilos para moviles y pantallas en delante*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.logo-image {
+    width: 40%;
+}
+
+.logo {
+    text-align: center;
+}
+
+.menu {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    padding-right: 8px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.product {
+    border: 1px solid (rgb(162, 162, 162));
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0px;
+}
+
+/*estilos para tabletas y pantallas en delante*/
+
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .social {
+        justify-content: space-around;
+    }
+}
+
+/*estilos para pantallas grandes*/
+
+@media screen and (min-width: 992px) {
+    .menu {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .hamburguer {
+        display: none;
+    }
+
+    .main {
+    flex-direction: row;
+    }
+
+    .product {
+        flex: 1;
+    }
+}
